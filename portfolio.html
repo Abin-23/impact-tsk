@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* CSS Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+            height: 250px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        header p {
+            font-size: 1.5em;
+            font-style: italic;
+        }
+
+        .image {
+            width: 180px;
+            height: 180px;
+            background-image: url("profile1.jpg");
+            border-radius: 50%;
+            border: 4px solid #fefefe;
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+            transition: all 0.5s ease;
+            
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        .portfolio-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="image"></div>
+        <div class="container">
+            <h1>Abin Sebastian</h1>
+            <p>Web Developer</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2 style="margin-right: 1250px;">About Me</h2>
+                <p>Hello! I’m Abin Sebastian, a dedicated Web Developer with over 5 years of experience in crafting dynamic and 
+                    responsive websites. My expertise lies in full-stack development, including front-end technologies such as HTML,
+                     CSS, and JavaScript, as well as back-end frameworks like Node.js and Express. I hold a degree in Computer Science 
+                     and have a proven track record of delivering high-quality solutions in various industries. My commitment to coding excellence and
+                     problem-solving drives me to stay ahead of industry trends and continuously enhance my skill set.</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="portfolio-items">
+                    <div class="portfolio-item">
+                        <img src="project1.jpg" alt="Project 1">
+                        <h3>EcoTrend: Sustainable Living Dashboard</h3>
+                        <p>EcoTrend is an innovative web application designed to promote sustainable living by providing users with personalized
+                             eco-friendly tips and resources. Developed using React for a dynamic front-end experience and Node.js for a robust back-end, 
+                             the dashboard integrates with various APIs to offer real-time updates on environmental news,
+                             local recycling guidelines, and green product recommendations.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="project2.jpg" alt="Project 2">
+                        <h3>TravelBuddy: Personalized Travel Itinerary Generator</h3>
+                        <p>TravelBuddy is a comprehensive travel itinerary generator built to simplify the planning process for globetrotters. Utilizing a combination of Vue.js for the front-end and Python Flask for the back-end, this application allows users to input their travel preferences, including destination, interests, and budget. The intelligent 
+                            algorithm then generates a customized itinerary with suggested activities, accommodation options, and dining experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Abin Sebastian</p>
+        </div>
+    </footer>
+
+   
+</body>
+</html>
